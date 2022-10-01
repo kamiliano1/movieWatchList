@@ -41,7 +41,7 @@ function render(movieId) {
     movieId.length=== 0 ? document.getElementById("my-watchlist").innerHTML = 
     `<h1 id="watchlist-info">Your watchlist is looking a little empty...</h1>
             <div class="watchlist-line">
-                <a href="./index.html" id="nav-disc"><img class="watchlist-icons" src="/icons/add-white.png">
+                <a href="./index.html" id="nav-disc"><img class="watchlist-icons" src="./icons/add-white.png">
                 <h2 id="watchlist-add-movies">Let’s add some movies!</h2></a>
             </div>` : ""
     movieId.map(id=>{
