@@ -1,0 +1,296 @@
+* { 
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 550px;
+    
+}
+/* Typography */
+h3 {
+    margin: 0;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: .6rem 0;
+}
+
+.watchlist-section{
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar */
+
+nav {
+    padding: 0 2rem;
+    color: white;
+    background: #1C1717;
+    background-image: url("images/logo.png");
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title h1 {
+    font-weight: 800;
+    font-size: 2.6875em;
+}
+
+.nav-title h3 {
+    font-weight: 800;
+    font-size: .875rem;
+}
+
+/* Navbar search bar */
+
+form {
+    
+    height: 38px;
+    margin-top: -1.25rem;
+    display: flex;
+    padding: 0 2em;
+    
+}
+
+form input {
+    padding: .1875rem 2.0625rem 0;
+    width: 75%;
+    background-image: url("icons/search-white.png");
+    background-repeat: no-repeat;
+    background-size: 10.5%;
+    border-radius: 6px 0 0 6px;
+    color: #6B7280;
+}
+
+form input,
+form button {
+    font-weight: 500;
+    font-size: .875rem;
+    border: 1px solid #D1D5DB;
+    line-height: 1.25rem;
+}
+
+form button {
+    width: 25%;
+    margin-right: 0px;
+    padding: 0px;
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+/* Main section */
+main {
+    display: flex;
+    margin-top: 2.5rem;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* Main start informations */
+
+#start-icon {
+    width: 80px;
+    margin: 10rem auto 0;  
+}
+
+#start-info {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #DFDDDD;
+}
+
+/* Main films */
+
+.film-title {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 20px;
+    margin-right: 0.5rem;
+}
+
+.film-details {
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.25rem;
+    color: #111827;
+    margin-right: .9rem;
+}
+
+.film-disc {
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #6B7280;
+}
+
+.film-img {
+    height: 190px;
+    width: 140px;
+    margin-right: 1.4rem;
+    
+}
+
+/* Movies icons */
+
+.star-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.25rem;
+}
+
+.film-icons {
+    width: 25px;
+    height: 25px;
+}
+
+.film-container {
+    padding: 0 2em;
+    display: flex;
+}
+
+.film-details-section {
+    display: flex;
+    align-items: center;
+}
+
+.film-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.underline {
+    margin: 1.5rem 0;
+    border-bottom: 1.5px solid #E5E7EB;
+
+}
+
+/* Watch list start info */
+
+#watchlist-info {
+    margin-top: 10rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+    color: #DFDDDD;
+    
+}
+
+#watchlist-add-movies {
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #363636;
+
+}
+
+.watchlist-icons {
+    width: 23px;
+    height: 23px;
+
+}
+
+.watchlist-line{
+    display: flex;
+    justify-content: center;
+    
+}
+ .watchlist-line a{
+    display: flex;
+    align-items: center;
+    
+}
+
+@media(max-width:575px) {
+    
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        width: 85%;
+    }
+    
+    nav {
+        height: 160px;
+    }
+    
+    .nav-title {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .nav-title h1 {
+        margin: 1rem;
+    }
+    
+    form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
+        height: 30px;
+    }
+    
+    form button {
+        margin-top: .5rem;
+        padding: 0px;
+        background: #E1E1E0;
+        border-width: 3px;
+    }
+    
+    form input,
+    form button {
+        border-radius: 6px;
+
+    }
+    form input {
+        width: 60%;
+        padding:  .25rem .25rem .25rem 1.45rem;
+        font-size: .8rem;
+    }
+    
+    .film-img {
+        height: 150px;
+        width: 100px;
+        margin-right: 1.0rem;
+    
+    }
+
+    .poster-container{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width:420px) {
+    
+    html {
+        font-size: 12px;
+    }
+}
